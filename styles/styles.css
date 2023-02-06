@@ -47,11 +47,10 @@ nav {
     font-size: 1rem;
 }
 
-
-
 /* banner section */
 
 .banner-container {
+    padding-top: 2vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,9 +74,6 @@ nav {
     font-size: 0.8rem;
 }
 
-.banner-container-img img {
-    width: 80%;
-}
 
 .banner-container-img-design {
     display: flex;
@@ -89,12 +85,36 @@ nav {
     border-radius: 50%;
 }
 
+.banner-container-img img {
+    width: 100%;
+}
+
+
 .banner-container-img-design div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
+/* sponsor */
+.sponsors {
+    padding: 5vh 20vh;
+}
+
+.sponsor {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    place-content: center;
+    gap: 2vh;
+    border: 1px solid #F1E4FF;
+    border-width: 1px 0 1px 0;
+    padding: 4vh 1vh;
+}
+
+.sponsor img {
+    width: 80%;
+}
 
 
 
@@ -110,6 +130,10 @@ nav {
     /* header section */
     header {
         padding: 0;
+    }
+
+    .banner-container-details {
+        padding: 2vh;
     }
 
 
@@ -130,4 +154,49 @@ nav {
         gap: 1.5vh;
     }
 
+    /* banner section */
+
+    .banner-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-container-details h1 {
+        font-weight: 700;
+        font-size: 2rem;
+        color: var(--text-color);
+        margin: 0;
+        padding: 0;
+    }
+
+    .banner-container-img-design {
+        height: 40vh;
+        width: 40vh;
+        border: 0.2px solid #F1E4FF;
+        border-radius: 50%;
+    }
+
+
+    /* sponsor section */
+    .sponsors {
+        padding: 2vh;
+    }
+
+    .sponsor {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .sponsor1 {
+        grid-column-start: 2;
+    }
+    
+    .sponsor5 {
+        grid-column-start: 2; 
+    }
+
+    .sponsor img {
+        width: 100%;
+    }
 }
