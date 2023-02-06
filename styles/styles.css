@@ -13,6 +13,14 @@ body {
     /* font-family: 'Inter', sans-serif; */
 }
 
+.btn {
+    padding: 2vh 4vh;
+    background: #E02C6D;
+    border-radius: 41px;
+    color: #FFFFFF;
+    border: none;
+}
+
 /* header section */
 
 /* navbar */
@@ -43,6 +51,49 @@ nav {
 
 /* banner section */
 
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-container-details {
+    flex: 1;
+    padding-right: 20vh;
+}
+
+.banner-container-details h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.banner-container-details p {
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.banner-container-img img {
+    width: 80%;
+}
+
+.banner-container-img-design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 70vh;
+    border: 0.2px solid #F1E4FF;
+    border-radius: 50%;
+}
+
+.banner-container-img-design div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -68,11 +119,11 @@ nav {
         align-items: center;
     }
 
-    nav h3{
+    nav h3 {
         padding: 0;
         margin: 2vh 0 0 0;
     }
-    
+
     .navbar-items {
         justify-content: center;
         align-items: center;
