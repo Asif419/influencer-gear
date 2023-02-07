@@ -10,6 +10,7 @@ body {
     margin: 0 auto;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    background: #fcf7f7;
     /* font-family: 'Inter', sans-serif; */
 }
 
@@ -113,14 +114,124 @@ nav {
 }
 
 .sponsor img {
-    width: 80%;
+    width: 100%;
 }
 
+.popular-collection-container .see-more {
+    text-align: end;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: rgba(224, 44, 109, 0.87);
+}
 
 
 /* main section */
 
+/* popular collection section */
+.popular-collection-container {
+    padding: 0vh 40vh;
+}
 
+.popular-collection-container h3 {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 2vh;
+}
+
+.popular-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3vh;
+}
+
+.popular-card {
+    padding: 2vh;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.popular-card h3 {
+    text-align: start;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.popular-card p {
+    font-family: 'Inter';
+    font-size: 0.7rem;
+    letter-spacing: 0.018em;
+    color: #787885;
+    margin: 0;
+    padding: 0;
+
+}
+
+.popular-card img {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.popular-card-ratings {
+    display: flex;
+    align-items: center;
+    gap: 0.5vh;
+}
+
+.popular-card .dollar {
+
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    color: #5E6366;
+}
+
+.popular-card-ratings .star {
+    color: #FB8200;
+}
+
+.popular-card-ratings p {
+    font-family: 'Inter';
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1rem;
+    margin: 0;
+    padding-left: 1.2vh;
+}
+
+
+/* feature products section */
+.feature-products {
+    padding: 7vh 40vh;
+}
+
+.feature-products-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-products-container img {
+    width: 100%;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-second {
+    padding: 2vh 4vh;
+    background: #E02C6D;
+    border-radius: 4px;
+    color: #FFFFFF;
+    border: none;
+}
 
 
 /* media query */
@@ -191,12 +302,54 @@ nav {
     .sponsor1 {
         grid-column-start: 2;
     }
-    
+
     .sponsor5 {
-        grid-column-start: 2; 
+        grid-column-start: 2;
     }
 
     .sponsor img {
         width: 100%;
+    }
+
+
+
+    /* main section */
+
+    /* popular collection section */
+    .popular-collection-container {
+        padding: 10vh;
+    }
+
+    .popular-cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3vh;
+    }
+
+    .popular-card h3 {
+        text-align: center;
+    }
+
+    /* feature products section */
+    .feature-products {
+        padding: 2vh;
+    }
+
+    .feature-products-container {
+        grid-template-columns: 1fr;
+        gap: 2vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature-products-container img {
+        width: 70%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
